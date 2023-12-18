@@ -1,0 +1,64 @@
+/* LandingPage.css */
+
+.landing-page-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(
+      45deg,
+      #ee7752,
+      #e73c7e,
+      #23a6d5,
+      #23d5ab
+    ); /* Gradient background with vibrant colors */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s infinite;
+    color: #fff; /* Light text color */
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .landing-content {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 4rem; /* Larger font size */
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Choose an appropriate font family */
+    color: #fff; /* Light text color */
+  }
+  
+  p {
+    font-size: 2rem; /* Larger font size */
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif; /* Choose an appropriate font family */
+  }
+  
+  .start-coding-button {
+    background-color: #3498db; /* Blue button color */
+    color: #fff; /* Light text color */
+    padding: 20px 40px; /* Larger padding for the button */
+    font-size: 1.5rem; /* Larger font size for the button */
+    border: none;
+    border-radius: 8px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .start-coding-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
